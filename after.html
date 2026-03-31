@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Website</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --blue: #0b3d91;
+    --light-blue: #1e6fff;
+    --yellow: #ffd43b;
+    --white: #ffffff;
+    --gray: #f4f6f9;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gray);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, var(--blue), var(--light-blue));
+    color: var(--white);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* NAVBAR */
+nav {
+    background: var(--yellow);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--light-blue);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* SECTIONS */
+section {
+    background: var(--white);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+h2 {
+    color: var(--blue);
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-left: 5px solid var(--yellow);
+    padding-left: 10px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--yellow);
+    object-fit: cover;
+}
+
+.about p {
+    font-size: 14px;
+}
+
+/* LISTS */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* LINKS */
+a {
+    color: var(--light-blue);
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+/* CONTACT */
+.contact {
+    background: var(--blue);
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Luis Gabriel D. Villanueva</h1>
+    <p>BS Information Technology Student</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#favorites">Favorites</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<section id="about" class="about">
+    <img src="pfp.jpg" alt="My Photo">
+    <div>
+        <h2>About Me</h2>
+        <p>Hi, I'm Gab — an IT student with a big heart and passion for technology.</p>
+    </div>
+</section>
+
+<section id="hobbies">
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Watching Netflix shows</li>
+        <li>Formula 1</li>
+        <li>Late night strolls</li>
+        <li>Listening to music</li>
+    </ul>
+</section>
+
+<section id="favorites">
+    <h2>Favorite Websites</h2>
+    <ol>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
+        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+    </ol>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: villanuevald@students.national-u.edu.ph</p>
+    <p>Facebook: Gab Villanueva</p>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 Luis Gabriel D. Villanueva | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
